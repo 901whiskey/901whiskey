@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bachelor Party Bash</title>
+    <meta
+      name="description"
+      content="Bachelor party weekend details including location, accommodations, itinerary, and attendees."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="hero" role="img" aria-label="Beachfront landscape in Mexico">
+      <div class="overlay">
+        <header class="site-header">
+          <div class="branding">
+            <p class="eyebrow">Bachelor Party Weekend</p>
+            <h1>Bachelor Bash 2025</h1>
+            <p class="meta">May 15 – 18 · Tulum, Mexico</p>
+          </div>
+          <button
+            class="menu-toggle"
+            aria-expanded="false"
+            aria-controls="section-tabs"
+            type="button"
+          >
+            Menu
+          </button>
+          <nav id="section-tabs" class="tabs" role="tablist">
+            <button
+              id="tab-overview"
+              class="tab is-active"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              aria-controls="panel-overview"
+              data-tab="overview"
+            >
+              Overview
+            </button>
+            <button
+              id="tab-accommodations"
+              class="tab"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-accommodations"
+              data-tab="accommodations"
+            >
+              Stay
+            </button>
+            <button
+              id="tab-itinerary"
+              class="tab"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-itinerary"
+              data-tab="itinerary"
+            >
+              Itinerary
+            </button>
+            <button
+              id="tab-crew"
+              class="tab"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-crew"
+              data-tab="crew"
+            >
+              The Crew
+            </button>
+          </nav>
+        </header>
+
+        <main>
+          <section
+            id="panel-overview"
+            class="panel is-active"
+            role="tabpanel"
+            aria-labelledby="tab-overview"
+          >
+            <h2>Welcome to Paradise</h2>
+            <p>
+              We are taking over Tulum for three nights of beach vibes, mezcal-fueled
+              adventures, and unforgettable memories celebrating the groom. Pack your
+              sunscreen, best linen fits, and a spirit of adventure.
+            </p>
+            <ul class="details">
+              <li><span>Location:</span> Tulum, Mexico</li>
+              <li><span>Dates:</span> Thursday, May 15 – Sunday, May 18</li>
+              <li><span>RSVP:</span> Please confirm by April 10</li>
+            </ul>
+          </section>
+
+          <section
+            id="panel-accommodations"
+            class="panel"
+            role="tabpanel"
+            tabindex="-1"
+            aria-labelledby="tab-accommodations"
+            hidden
+          >
+            <h2>Where We’re Staying</h2>
+            <div class="card-grid">
+              <article class="card">
+                <h3>Casa del Mar</h3>
+                <p>
+                  Oceanfront villa with private pool and rooftop lounge. All rooms are
+                  double occupancy with king beds.
+                </p>
+                <ul>
+                  <li>Check-in: Thursday after 3:00 PM</li>
+                  <li>Check-out: Sunday by 11:00 AM</li>
+                  <li>Address: Km 5.5 Carretera Tulum-Boca Paila</li>
+                  <li>Point of Contact: Maria (WhatsApp +52 1 984 123 4567)</li>
+                </ul>
+              </article>
+              <article class="card">
+                <h3>What to Bring</h3>
+                <ul>
+                  <li>Beach and pool gear</li>
+                  <li>Outfit for the jungle dinner</li>
+                  <li>Closed-toe shoes for the ATV excursion</li>
+                  <li>Passport & travel insurance details</li>
+                </ul>
+              </article>
+            </div>
+          </section>
+
+          <section
+            id="panel-itinerary"
+            class="panel"
+            role="tabpanel"
+            tabindex="-1"
+            aria-labelledby="tab-itinerary"
+            hidden
+          >
+            <h2>Weekend Game Plan</h2>
+            <ol class="timeline">
+              <li>
+                <h3>Thursday · Arrival & Sunset</h3>
+                <p>Check-in, welcome cocktails, and dinner at Hartwood.</p>
+              </li>
+              <li>
+                <h3>Friday · Adventure Day</h3>
+                <p>Morning cenote swim, afternoon ATVs, and rooftop bar crawl.</p>
+              </li>
+              <li>
+                <h3>Saturday · Chill & Celebrate</h3>
+                <p>Beach club cabana, yacht cruise, and jungle tasting menu.</p>
+              </li>
+              <li>
+                <h3>Sunday · Recovery Mode</h3>
+                <p>Brunch at Burrito Amor, pack up, airport transfers.</p>
+              </li>
+            </ol>
+          </section>
+
+          <section
+            id="panel-crew"
+            class="panel"
+            role="tabpanel"
+            tabindex="-1"
+            aria-labelledby="tab-crew"
+            hidden
+          >
+            <h2>The Bachelor Crew</h2>
+            <ul class="crew-list">
+              <li><span>Groom:</span> Alex Carter</li>
+              <li><span>Best Man:</span> Jordan Brooks</li>
+              <li><span>Groomsmen:</span> Marco, Liam, Chris, Nate, Sam</li>
+              <li><span>Honorary Guests:</span> Olivia, Taylor</li>
+              <li><span>Planner:</span> You rock!</li>
+            </ul>
+            <p class="note">
+              Need to update this list? Drop your edits in the shared Google Sheet or ping the
+              group chat.
+            </p>
+          </section>
+        </main>
+
+        <footer class="site-footer">
+          <p>
+            Questions? Contact Jordan at
+            <a href="mailto:jordan@example.com">jordan@example.com</a> or in the WhatsApp chat.
+          </p>
+        </footer>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
