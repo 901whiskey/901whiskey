@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <h1>Gym Exercise Tracker</h1>
+        <p>Log your workouts and track progress over time.</p>
+      </header>
+
+      <section class="panel stats" aria-label="Workout summary">
+        <h2>Summary</h2>
+        <div class="stats-grid">
+          <article>
+            <span class="label">Total workouts</span>
+            <span id="total-workouts" class="value">0</span>
+          </article>
+          <article>
+            <span class="label">Unique exercises</span>
+            <span id="unique-exercises" class="value">0</span>
+          </article>
+          <article>
+            <span class="label">Total volume (kg)</span>
+            <span id="total-volume" class="value">0</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Add exercise</h2>
+        <form id="exercise-form">
+          <div class="form-grid">
+            <label>
+              Exercise name
+              <input type="text" name="name" placeholder="e.g. Bench Press" required />
+            </label>
+            <label>
+              Date
+              <input type="date" name="date" required />
+            </label>
+            <label>
+              Sets
+              <input type="number" name="sets" min="1" value="3" required />
+            </label>
+            <label>
+              Reps
+              <input type="number" name="reps" min="1" value="8" required />
+            </label>
+            <label>
+              Weight (kg)
+              <input type="number" name="weight" min="0" step="0.5" value="0" required />
+            </label>
+            <label>
+              Notes
+              <input type="text" name="notes" placeholder="Optional" />
+            </label>
+          </div>
+          <button type="submit">Save exercise</button>
+        </form>
+      </section>
+
+      <section class="panel">
+        <div class="list-header">
+          <h2>Workout history</h2>
+          <label>
+            Filter by exercise
+            <input id="filter-input" type="text" placeholder="Type to filter..." />
+          </label>
+        </div>
+        <ul id="exercise-list" class="exercise-list"></ul>
+      </section>
+    </main>
+
+    <template id="exercise-item-template">
+      <li class="exercise-item">
+        <div>
+          <h3 class="exercise-name"></h3>
+          <p class="exercise-meta"></p>
+          <p class="exercise-notes"></p>
+        </div>
+        <button class="danger" type="button">Delete</button>
+      </li>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
